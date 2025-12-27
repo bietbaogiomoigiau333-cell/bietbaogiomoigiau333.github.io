@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Virtual Try-On (2D)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>👗 Virtual Try-On (2D)</h1>
+
+<div class="main">
+
+  <!-- AVATAR -->
+  <div class="avatar-box" id="avatarBox">
+    <img id="top">
+    <img id="bottom">
+  </div>
+
+  <!-- PANEL -->
+  <div class="panel">
+
+    <h3>Áo</h3>
+    <div class="grid">
+      <button onclick="toggleTop('ao_chuong_do')"><img src="thumbnails/ao_chuong_do.png"></button>
+      <button onclick="toggleTop('ao_hoa_nhi')"><img src="thumbnails/ao_hoa_nhi.png"></button>
+      <button onclick="toggleTop('ao_khoac_xam')"><img src="thumbnails/ao_khoac_xam.png"></button>
+      <button onclick="toggleTop('ao_phong_xam')"><img src="thumbnails/ao_phong_xam.png"></button>
+      <button onclick="toggleTop('ao_trang')"><img src="thumbnails/ao_trang.png"></button>
+      <button onclick="toggleTop('ao_vang')"><img src="thumbnails/ao_vang.png"></button>
+      <button onclick="toggleTop('ao_tam_giac')"><img src="thumbnails/ao_tam_giac.png"></button>
+    </div>
+
+    <h3>Quần</h3>
+    <div class="grid">
+      <button onclick="toggleBottom('quan_jean')"><img src="thumbnails/quan_jean.png"></button>
+      <button onclick="toggleBottom('quan_suong_nau')"><img src="thumbnails/quan_suong_nau.png"></button>
+    </div>
+
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
